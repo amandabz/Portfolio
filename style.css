@@ -2,3 +2,15 @@ body {
     /* colors: https://htmlcolorcodes.com/es/ */
     background-color: #F8CFFC;
 }
+
+.contact-form {
+    background-color: #F5BEFA;
+    padding: 20px;
+    margin: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+

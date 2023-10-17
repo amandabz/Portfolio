@@ -38,7 +38,9 @@
             <li class="aptitudes-list">System Administration</li>
         </ul>
 
-        <img title="Amanda's photo" src="images/me.jpg" alt="A photo of myself" width="250" height="370">
+        <a href="images/me.jpg">
+            <img title="Amanda's photo" src="images/me.jpg" alt="A photo of myself" width="250" height="370">
+        </a>
 
         <aside> <!-- aside label is used for information that is separated from the general content -->
             <header>
@@ -90,6 +92,33 @@
                 </header>
             </article>
         </section>
+
+        <section class="contact-form">
+            <h3>Contact form</h3>
+
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Personal information</legend>
+
+                        <label>Name:
+                            <input id="name" type="text" name="name" placeholder="Write here your name" required>
+                        </label>
+
+                        <label>Surnames:
+                            <input id="surnames" type="text" name="surnames" placeholder="Write here your surnames" required>
+                        </label>
+
+                        <label>Email:
+                            <input id="email" type="email" name="email" placeholder="Write here your email" required>
+                        </label>
+
+                </fieldset>
+
+                <input type="submit" value="Send your contact">  <!-- field verification  -->
+
+            </form>
+        </section>
+
     </main>
 
     <footer>
