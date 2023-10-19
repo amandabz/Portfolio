@@ -4,7 +4,6 @@ body {
 }
 
 .contact-form {
-    background-color: #F5BEFA;
     padding: 20px;
     margin: 10px;
 }
@@ -13,4 +12,18 @@ label {
     display: block;
     margin: 10px 0;
 }
+
+iframe {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#myself-photo {
+    width: 100%;
+    aspect-ratio: 373/568;
+}
+
+
 

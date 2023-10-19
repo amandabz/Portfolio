@@ -29,6 +29,17 @@
             </nav>
         </header>
 
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=mqVOQpm4HtCF5VL8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        <!-- <video autoplay loop muted src="video url"></video>
+         autplay loop: the video plays in a loop without anyone needing to press play  -->
+
+        <!-- <audio controls src="audio url"></audio>> -->
+
         <p id="introduction">Hey there! My name is Amanda. I'm studiying <strong>Network Computer Systems Administration</strong> in <em>Tech Park, Málaga, Spain.</em></p>
 
         <h2 id="aptitudes">Aptitudes</h2>
@@ -38,9 +49,35 @@
             <li class="aptitudes-list">System Administration</li>
         </ul>
 
+        <!--
         <a href="images/me.jpg">
-            <img title="Amanda's photo" src="images/me.jpg" alt="A photo of myself" width="250" height="370">
+            <img id="myself-photo" loading="lazy" title="Amanda's photo" src="images/me.jpg" alt="A photo of myself">
         </a>
+        -->
+
+        <!-- loading="lazy": load the picture when it's being viewed on the web page.
+             don't do it when the photo is at the top of the website
+        -->
+
+        <section class="modal-section">
+            <dialog id="dialog">
+                <h1>This is a dialog test</h1>
+                <p>This a dialog</p>
+                <button id="hide">Close modal</button>
+            </dialog>
+
+            <button id="show">Test about dialogs and modals!</button>
+
+            <script>
+                window.show.addEventListener('click', () => {
+                    window.dialog.showModal()
+                })
+
+                window.hide.addEventListener('click', () =>{
+                    window.dialog.close()
+                })
+            </script>
+        </section>
 
         <aside> <!-- aside label is used for information that is separated from the general content -->
             <header>
@@ -93,6 +130,21 @@
             </article>
         </section>
 
+        <section> <!-- dropdown section -->
+            <h3>Some questions</h3>
+
+            <details open>
+                <summary>What studies do you have?</summary>
+                <p>As I said before, I have studied a Higher Degree in
+                    Administration of Networked Computer Systems in Malaga. </p>
+            </details>
+
+            <details open>
+                <summary>What is your objetive?</summary>
+                <p>My goal is to become proficient in programming without any issues.</p>
+            </details>
+        </section>
+
         <section class="contact-form">
             <h3>Contact form</h3>
 
@@ -112,9 +164,21 @@
                             <input id="email" type="email" name="email" placeholder="Write here your email" required>
                         </label>
 
+                        <div>
+                            <datalist id="languages">
+                                <option value="JavaScript"></option>
+                                <option value="Java"></option>
+                                <option value="Python"></option>
+                                <option value="Other/s"></option>
+                            </datalist>
+                            <label>
+                                What programming language do you perform best with?
+                                <input list="languages" name="languages">
+                            </label>
+                        </div>
                 </fieldset>
 
-                <input type="submit" value="Send your contact">  <!-- field verification  -->
+                <input type="submit" value="Send your contact">  <!-- button/field verification  -->
 
             </form>
         </section>
@@ -125,8 +189,9 @@
         Copyright © 2023 - Amanda's Portfolio
 
         <button>
-            <a href="mailto: abenhidd@gmail.com">You contact with me clicking here!</a>
+            <a href="mailto: abenhidd@gmail.com">You can contact with me clicking here!</a>
         </button>
+
     </footer>
 
 </body>
